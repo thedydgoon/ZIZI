@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZIZI</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">첫번째 페이지</string>
+    <string name="photo">촬영 및 행사</string>
+    <string name="model">모델페이지</string>
+    <string name="gallery">사진갤러리</string>
+    <string name="mypage">마이페이지</string>
+</resources>

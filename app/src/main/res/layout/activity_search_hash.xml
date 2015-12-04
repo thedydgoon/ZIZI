@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/basic_padding16"
+        android:paddingRight="@dimen/basic_padding16"
+        >
+
+        <TextView
+            android:id="@+id/search_hash_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="#용군"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/search_hash_total_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="center_vertical"
+            android:text="365개의 글"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:layout_marginLeft="@dimen/basic_margin08"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:background="@color/colorLightPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#화려한외출"
+            android:textSize="14dp"
+            android:padding="@dimen/basic_padding08"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@color/colorWhite"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--  -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/masonry_grid"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <!-- //해시검색 타이틀 -->
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

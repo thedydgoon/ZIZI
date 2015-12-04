@@ -1,0 +1,208 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정정보"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondaryText"
+                android:padding="@dimen/basic_padding08"
+                />
+            <!-- 관심 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/basic_margin08"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_mypage"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="관심"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="7"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <!-- 팔로잉 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_mypage"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="팔로잉"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="7"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <!-- 팔로워 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_mypage"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="팔로워"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="7"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <!-- 태그 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_mypage"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="나의태그"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="7"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_marginTop="@dimen/basic_16"
+                android:layout_marginBottom="@dimen/basic_16"
+                />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mygallery_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나의 사진첩"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondaryText"
+                android:paddingLeft="@dimen/basic_padding08"
+                android:paddingRight="@dimen/basic_padding08"
+                android:paddingBottom="@dimen/basic_padding08"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mypage_gallery_list"
+                android:layout_below="@id/mygallery_list_title"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+

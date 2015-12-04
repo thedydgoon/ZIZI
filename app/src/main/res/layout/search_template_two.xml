@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingTop="@dimen/basic_padding16"
+    android:paddingBottom="@dimen/basic_padding16"
+    android:paddingLeft="@dimen/basic_padding08"
+    android:paddingRight="@dimen/basic_padding08"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_hash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ZIZI 촬영"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30개의 글"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/search_hash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/basic_padding16"
+        >
+
+
+        <ImageView
+            android:id="@+id/template_image_one"
+            android:layout_alignParentRight="true"
+            android:layout_width="228dp"
+            android:layout_height="188dp"
+            android:background="@color/colorLightPrimary"
+
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/template_image_two"
+            android:layout_alignParentLeft="true"
+            android:layout_width="108dp"
+            android:layout_height="90dp"
+            android:scaleType="matrix"
+            android:background="@color/colorLightPrimary"
+            />
+
+        <ImageView
+            android:id="@+id/template_image_three"
+            android:layout_alignRight="@+id/template_image_two"
+            android:layout_below="@+id/template_image_two"
+            android:layout_marginTop="@dimen/basic_margin08"
+            android:layout_width="108dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorLightPrimary"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+

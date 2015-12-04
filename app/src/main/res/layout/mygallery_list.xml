@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/basic_padding16"
+    >
+
+    <ImageView
+        android:id="@+id/mygallery_profile"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/gallery_photo"
+        />
+
+    <TextView
+        android:id="@+id/mygallery_title"
+        android:layout_toRightOf="@id/mygallery_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="갤러리 타이틀"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/mygallery_sub_title"
+        android:layout_toRightOf="@id/mygallery_profile"
+        android:layout_below="@id/mygallery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="갤러리 작은 설명"
+        android:textSize="12sp"
+        />
+
+
+</RelativeLayout>

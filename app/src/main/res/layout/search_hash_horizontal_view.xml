@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingLeft="14dp"
+    android:background="@color/colorLightPrimary"
+    >
+
+    <TextView
+        android:id="@+id/latest_hash_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:text="#화려한외출"
+        android:textSize="14dp"
+        android:paddingLeft="@dimen/basic_padding08"
+        android:paddingRight="@dimen/basic_padding08"
+        android:textColor="@color/colorPrimaryText"
+        android:background="@color/colorWhite"
+        />
+
+
+</LinearLayout>

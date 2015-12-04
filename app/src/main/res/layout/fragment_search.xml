@@ -1,0 +1,74 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:id="@+id/zizi_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/zizi_search"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:src="@drawable/zizi_search"
+            android:scaleType="matrix"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zizi_search_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zizi_search_layout"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/colorLightPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/hash_tag_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tag320_1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tag320_2"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tag320_3"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tag320_4"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_below="@+id/zizi_search_hash"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>
